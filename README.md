@@ -23,7 +23,7 @@ Example `docker-compose.yml` for `adminerevo`:
 ```yaml
 # Use root/example as user/password credentials
 
-version: '3.1'
+version: "3.1"
 services:
   adminer:
     image: ghcr.io/shyim/adminerevo:latest
@@ -47,7 +47,7 @@ To load plugins you can pass a list of filenames in `ADMINER_PLUGINS`:
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='tables-filter tinymce' ghcr.io/shyim/adminerevo:latest
 ```
 
-If a plugin *requires* parameters to work correctly instead of adding the plugin to `ADMINER_PLUGINS`, you need to add a custom file to the container:
+If a plugin _requires_ parameters to work correctly instead of adding the plugin to `ADMINER_PLUGINS`, you need to add a custom file to the container:
 
 ```console
 $ docker run --link some_database:db -p 8080:8080 -e ADMINER_PLUGINS='login-servers' ghcr.io/shyim/adminerevo:latest
@@ -93,10 +93,10 @@ docker run -p 8080:8080 -e ADMINER_DEFAULT_SERVER=mysql ghcr.io/shyim/adminerevo
 
 While Adminer supports a wide range of database drivers this image only supports the following out of the box:
 
--	MySQL
--	PostgreSQL
--	SQLite
--	Elasticsearch
+- MySQL
+- PostgreSQL
+- SQLite
+- Elasticsearch
 
 # License
 
