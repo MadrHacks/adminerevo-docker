@@ -35,4 +35,4 @@ jobs:
         with:
           file: Dockerfile
           push: true
-          tags: ${{ env.REGISTRY }}/management-2024/adminerevo:${{ env.TAG }}
+          tags: ${{ env.REGISTRY }}/management/adminerevo:${{ env.TAG }}
